@@ -58,4 +58,4 @@ npm i -D optimize-css-assets-webpack-plugin terser-webpack-plugin
 - `npm run build-prod` to generate a dist folder for prod
 - `npm run start` to run the Express server on port 8085
 
-7. Open browser at http://localhost:8085/
+7. Open browser at http://localhost:8081/
