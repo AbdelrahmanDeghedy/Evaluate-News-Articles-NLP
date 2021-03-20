@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluate News Articles</title>
+    <link href="https://fonts.googleapis.com/css2?&family=Roboto:wght@300;500;700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="main.1520b2efd70ab6fd2aef.css" rel="stylesheet"></head>
+
+  <body>
+    <header>
+      <h1 class="title">
+        Evaluate News Articles
+      </h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <p class="start-phrase">Enter a blog URL to get its sentiment.</p>
+        <section class="form-section">
+          <form id="form">
+            <label for="url">URL</label>
+            <input id="article-url" type="text" name="input" value="" placeholder="Enter Article URL here" />
+            <button class="btn">Submit</button>
+          </form>
+        </section>
+
+        <strong>Results</strong>
+        <table>
+          <td id="score_tag"></td>
+          <td id="agreement"></td>
+          <td id="subjectivity"></td>
+          <td id="confidence"></td>
+          <td id="irony"></td>
+        </table>
+      </div>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer__site-info">
+          <nav class="footer__social">
+            <a href="#" class="social__item"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social__item"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/AbdelrahmanDeghedy" class="social__item"><i class="fab fa-github"></i></a>
+          </nav>
+          <div class="footer__copyright">
+            Abdelrahman Deghedy &copy; - 2021 Powered by
+            <a href="https://www.udacity.com/" target="_blank">Udacity</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+        })
+      }
+    </script>
+  <script type="text/javascript" src="main.js"></script></body>
+</html>

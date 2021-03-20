@@ -1,0 +1,13 @@
+table {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+table, th, td {
+    border : 1px solid black;
+}
+
+td {
+    display: block;
+}
